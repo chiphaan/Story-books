@@ -1,0 +1,9 @@
+<h2>Famous Books</h2>
+<div class="topbooks" ng-repeat="book in $root.books" style="align-content: center">
+	<!-- <td>{{hero.code}}</td>
+	<td>{{hero.name}}</td>
+	<td>{{hero.desc}}</td> -->
+
+	<md-button style="width: 300px" class="md-raised md-primary" ng-click="ctrl.edit(book)">{{book.name}}</md-button>
+
+</div>

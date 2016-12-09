@@ -1,0 +1,36 @@
+<h2>Add / Edit Books</h2>
+
+<md-content >
+    <form name="booksForm" layout="row" layout-wrap layout-padding>
+        <md-input-container flex="80">
+            <label>Book Name</label>
+            <input required name="name" ng-model="ctrl.book.name">
+            <div ng-messages="booksForm.name.$error">
+                <div ng-message="required">This is required.</div>
+            </div>
+        </md-input-container>
+
+        <md-input-container flex="20">
+            <label>Quantity</label>
+            <input required type="number" name="qty" ng-model="ctrl.book.qty">
+            <div ng-messages="booksForm.qty.$error">
+                <div ng-message="required">This is required.</div>
+            </div>
+        </md-input-container>
+
+        <md-input-container flex="100">
+            <label>Description</label>
+            <input required type="text" name="desc" ng-model="ctrl.book.desc">
+
+            <div ng-messages="booksForm.desc.$error" role="alert">
+                <div ng-message="required">This is required</div>
+            </div>
+        </md-input-container>
+
+        <div layout="column" flex="100">
+            <div flex></div>
+            <md-button class="md-raised md-primary" ng-click="ctrl.save(ctrl.book)" ng-disabled="booksForm.$invalid">Save</md-button>
+        </div>
+
+    </form>
+</md-content>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/vendor/material-icons.css">
+	<link rel="stylesheet" type="text/css" href="./css/vendor/angular.material.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/app.css">
+	<title>Story Books</title>
+</head>
+<body ng-controller="AppController as app" ng-cloak layout="row" layout-align="center start">
+	<div class="main md-whiteframe-1dp" flex="100" flex-gt-xs="70" flex-gt-sm="60" flex-gt-md="50">
+		<h2 align="center">
+			Story Books
+		</h2>
+		<section layout="row" layout-wrap>
+			<div layout-padding flex="100" layout="row">
+				<md-button class="md-raised md-primary" ng-href="#home" flex="33">Dashboard</md-button>
+				<md-button class="md-raised md-primary" ng-href="#books" flex="33">All Books</md-button>
+				<md-button class="md-raised md-primary" ng-href="#books/add" flex="33">Manage Books</md-button>
+			</div>
+			<div layout-padding flex="100" layout="column">
+				<md-input-container md-no-float flex="100">
+					<md-icon class="material-icons">search</md-icon>
+					<input ng-model="$root.searchTerm" type="text" placeholder="Search" ng-change="app.search($root.searchTerm)">
+				</md-input-container>
+			</div>
+		</section>
+
+		<div ng-view layout-padding></div>
+	</div>
+
+
+	<script type="text/javascript" src="./src/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="./src/vendor/angular-route.min.js"></script>
+
+	<script type="text/javascript" src="./src/vendor/angular-animate.min.js"></script>
+	<script type="text/javascript" src="./src/vendor/angular-aria.min.js"></script>
+	<script type="text/javascript" src="./src/vendor/angular-messages.min.js"></script>
+	<script type="text/javascript" src="./src/vendor/angular-material.min.js"></script>
+	
+	<script type="text/javascript" src="./src/app.js"></script>
+</body>
+</html>

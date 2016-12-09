@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Harry Potter",
+        "qty": 10,
+        "desc": "Action book"
+    },
+    {
+        "id": 2,
+        "name": "Goosebumps",
+        "qty": 5,
+        "desc": "Horror"
+    },
+    {
+        "id": 3,    
+        "name": "Avengers",
+        "qty": 3,
+        "desc": "Comic"
+    }
+    ,
+    {
+        "id": 4,    
+        "name": "X-men",
+        "qty": 4,
+        "desc": "Action story"
+    }
+    ,
+    {
+        "id": 5,    
+        "name": "Save the Turtle",
+        "qty": 5,
+        "desc": "Documentry"
+    }
+    ,
+    {
+        "id": 6,    
+        "name": "Spiderman",
+        "qty": 2,
+        "desc": "Comic"
+    }
+]

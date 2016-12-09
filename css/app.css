@@ -1,0 +1,12 @@
+body {
+	min-height:100%;
+	height:auto;
+}
+
+.align-left {
+	text-align: left !important;
+}
+
+.main {
+  background-color: #f7f7f7;
+}
